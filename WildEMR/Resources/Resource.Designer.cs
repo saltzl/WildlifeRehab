@@ -60,8 +60,44 @@ namespace WildEMR
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050005
+			public const int add_photo_button = 2131034117;
+			
+			// aapt resource value: 0x7f050016
+			public const int additional_notes_text = 2131034134;
+			
+			// aapt resource value: 0x7f05000f
+			public const int cancel_button = 2131034127;
+			
+			// aapt resource value: 0x7f05000d
+			public const int cancel_next_layout = 2131034125;
+			
+			// aapt resource value: 0x7f05000e
+			public const int cancel_next_sublayout = 2131034126;
+			
+			// aapt resource value: 0x7f050018
+			public const int cancel_save_layer = 2131034136;
+			
+			// aapt resource value: 0x7f050017
+			public const int edit_additional_notes = 2131034135;
+			
+			// aapt resource value: 0x7f050013
+			public const int edit_height = 2131034131;
+			
+			// aapt resource value: 0x7f05000c
+			public const int edit_id = 2131034124;
+			
+			// aapt resource value: 0x7f050015
+			public const int edit_weight = 2131034133;
+			
 			// aapt resource value: 0x7f050002
 			public const int existing_patient_btn = 2131034114;
+			
+			// aapt resource value: 0x7f050012
+			public const int height_text = 2131034130;
+			
+			// aapt resource value: 0x7f05000b
+			public const int id_text = 2131034123;
 			
 			// aapt resource value: 0x7f050000
 			public const int linearLayout1 = 2131034112;
@@ -69,11 +105,41 @@ namespace WildEMR
 			// aapt resource value: 0x7f050001
 			public const int new_patient_btn = 2131034113;
 			
+			// aapt resource value: 0x7f05000a
+			public const int new_patient_id_layout = 2131034122;
+			
+			// aapt resource value: 0x7f050011
+			public const int new_patient_screen_2_layout = 2131034129;
+			
 			// aapt resource value: 0x7f050004
-			public const int new_species_info_next = 2131034116;
+			public const int new_patient_screen_layout = 2131034116;
+			
+			// aapt resource value: 0x7f050010
+			public const int next_button = 2131034128;
+			
+			// aapt resource value: 0x7f050019
+			public const int save_button = 2131034137;
 			
 			// aapt resource value: 0x7f050003
 			public const int settings_btn = 2131034115;
+			
+			// aapt resource value: 0x7f050007
+			public const int species_button = 2131034119;
+			
+			// aapt resource value: 0x7f050006
+			public const int species_button_spinner_layout = 2131034118;
+			
+			// aapt resource value: 0x7f05001a
+			public const int species_screen_spinner = 2131034138;
+			
+			// aapt resource value: 0x7f050009
+			public const int species_spinner = 2131034121;
+			
+			// aapt resource value: 0x7f050008
+			public const int species_spinner_layout = 2131034120;
+			
+			// aapt resource value: 0x7f050014
+			public const int weight_text = 2131034132;
 			
 			static Id()
 			{
@@ -94,6 +160,12 @@ namespace WildEMR
 			// aapt resource value: 0x7f030001
 			public const int NewPatientScreen = 2130903041;
 			
+			// aapt resource value: 0x7f030002
+			public const int NewPatientScreen2 = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int SpeciesScreen = 2130903043;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -107,11 +179,32 @@ namespace WildEMR
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
-			
 			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int cancel_button = 2130968578;
+			
+			// aapt resource value: 0x7f040008
+			public const int edit_additional_notes_hint = 2130968584;
+			
+			// aapt resource value: 0x7f040006
+			public const int edit_height_hint = 2130968582;
+			
+			// aapt resource value: 0x7f040005
+			public const int edit_id_hint = 2130968581;
+			
+			// aapt resource value: 0x7f040007
+			public const int edit_weight_hint = 2130968583;
+			
+			// aapt resource value: 0x7f040003
+			public const int next_button = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int save_button = 2130968580;
+			
+			// aapt resource value: 0x7f040001
+			public const int species_button = 2130968577;
 			
 			static String()
 			{
