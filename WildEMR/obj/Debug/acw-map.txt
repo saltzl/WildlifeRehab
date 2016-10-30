@@ -1,3 +1,7 @@
+WildEMR.NewPatientScreen2, WildEMR;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen2
+WildEMR.NewPatientScreen2, WildEMR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen2
+WildEMR.NewPatientScreen2;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen2
+wildemr.NewPatientScreen2;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen2
 WildEMR.NewPatientScreen, WildEMR;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen
 WildEMR.NewPatientScreen, WildEMR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen
 WildEMR.NewPatientScreen;md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen

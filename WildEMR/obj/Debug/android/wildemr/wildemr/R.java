@@ -16,7 +16,8 @@ public final class R {
     public static final class id {
         public static final int add_photo_button=0x7f050005;
         public static final int additional_notes_text=0x7f050016;
-        public static final int cancel_button=0x7f05000f;
+        public static final int cancel_button1=0x7f05000f;
+        public static final int cancel_button2=0x7f050019;
         public static final int cancel_next_layout=0x7f05000d;
         public static final int cancel_next_sublayout=0x7f05000e;
         public static final int cancel_save_layer=0x7f050018;
@@ -32,14 +33,14 @@ public final class R {
         public static final int new_patient_id_layout=0x7f05000a;
         public static final int new_patient_screen_2_layout=0x7f050011;
         public static final int new_patient_screen_layout=0x7f050004;
-        public static final int next_button=0x7f050010;
-        public static final int save_button=0x7f050019;
+        public static final int next_button1=0x7f050010;
+        public static final int save_button2=0x7f05001a;
         public static final int settings_btn=0x7f050003;
-        public static final int species_button=0x7f050007;
         public static final int species_button_spinner_layout=0x7f050006;
-        public static final int species_screen_spinner=0x7f05001a;
+        public static final int species_screen_spinner=0x7f05001b;
         public static final int species_spinner=0x7f050009;
         public static final int species_spinner_layout=0x7f050008;
+        public static final int species_text=0x7f050007;
         public static final int weight_text=0x7f050014;
     }
     public static final class layout {

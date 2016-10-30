@@ -37,4 +37,45 @@ C:\Users\brownt8\Favorites\Documents\Visual Studio 2015\Projects\WildEMR\WildEMR
 C:\Users\brownt8\Favorites\Documents\Visual Studio 2015\Projects\WildEMR\WildEMR\obj\Debug\android\assets\WildEMR.dll.mdb
 C:\Users\brownt8\Favorites\Documents\Visual Studio 2015\Projects\WildEMR\WildEMR\obj\Debug\res\layout\newpatientscreen.xml
 C:\Users\brownt8\Favorites\Documents\Visual Studio 2015\Projects\WildEMR\WildEMR\obj\Debug\WildEMR.dll.mdb
-C:\Users\brownt8\Favorites\Documents\Visual Studio 2015\Projects\WildEMR\WildEMR\bin\Debug\WildEMR.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\WildEMR.dll
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\WildEMR.pdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\WildEMR.WildEMR.apk
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\WildEMR.WildEMR-Signed.apk
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\WildEMR.csprojResolveAssemblyReference.cache
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\WildEMR.dll
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\WildEMR.pdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\bin\WildEMR.WildEMR.apk
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\res\layout\newpatientscreen.xml
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\res\layout\newpatientscreen2.xml
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\res\layout\speciesscreen.xml
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\res\layout\main.xml
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\res\values\strings.xml
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\res\drawable\icon.png
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\R.cs.flag
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\uploadflags.txt
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\Java.Interop.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\Mono.Android.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\mscorlib.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.Core.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.Xml.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\WildEMR.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\android\assets\WildEMR.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\obj\Debug\WildEMR.dll.mdb
+C:\Users\Greg Avsyuk\Documents\Visual Studio 2015\Projects\WildlifeRehab-master\WildEMR\bin\Debug\WildEMR.dll.mdb

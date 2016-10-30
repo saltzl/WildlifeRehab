@@ -5,6 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="WildEMR" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="New Patient Screen" android:name="md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen2" />
     <activity android:label="New Patient Screen" android:name="md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen" />
     <activity android:icon="@drawable/icon" android:label="WildEMR" android:name="md5d7f5275a3f6679d00875c7f5086b2161.MainActivity">
       <intent-filter>

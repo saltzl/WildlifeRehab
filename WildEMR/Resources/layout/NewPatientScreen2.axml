@@ -54,19 +54,19 @@
                 android:gravity="bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="294.0dp">
+                android:layout_marginTop="230.0dp">
                 <Button
                     android:text="@string/cancel_button"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:id="@+id/cancel_button" />
+                    android:id="@+id/cancel_button2" />
                 <Button
                     android:text="@string/save_button"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:layout_weight="1"
-                    android:id="@+id/save_button" />
+                    android:id="@+id/save_button2" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

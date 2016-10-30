@@ -14,18 +14,50 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
+        public static final int add_photo_button=0x7f050005;
+        public static final int additional_notes_text=0x7f050016;
+        public static final int cancel_button1=0x7f05000f;
+        public static final int cancel_button2=0x7f050019;
+        public static final int cancel_next_layout=0x7f05000d;
+        public static final int cancel_next_sublayout=0x7f05000e;
+        public static final int cancel_save_layer=0x7f050018;
+        public static final int edit_additional_notes=0x7f050017;
+        public static final int edit_height=0x7f050013;
+        public static final int edit_id=0x7f05000c;
+        public static final int edit_weight=0x7f050015;
         public static final int existing_patient_btn=0x7f050002;
+        public static final int height_text=0x7f050012;
+        public static final int id_text=0x7f05000b;
         public static final int linearLayout1=0x7f050000;
         public static final int new_patient_btn=0x7f050001;
-        public static final int new_species_info_next=0x7f050004;
+        public static final int new_patient_id_layout=0x7f05000a;
+        public static final int new_patient_screen_2_layout=0x7f050011;
+        public static final int new_patient_screen_layout=0x7f050004;
+        public static final int next_button1=0x7f050010;
+        public static final int save_button2=0x7f05001a;
         public static final int settings_btn=0x7f050003;
+        public static final int species_button_spinner_layout=0x7f050006;
+        public static final int species_screen_spinner=0x7f05001b;
+        public static final int species_spinner=0x7f050009;
+        public static final int species_spinner_layout=0x7f050008;
+        public static final int species_text=0x7f050007;
+        public static final int weight_text=0x7f050014;
     }
     public static final class layout {
         public static final int main=0x7f030000;
         public static final int newpatientscreen=0x7f030001;
+        public static final int newpatientscreen2=0x7f030002;
+        public static final int speciesscreen=0x7f030003;
     }
     public static final class string {
-        public static final int ApplicationName=0x7f040001;
-        public static final int Hello=0x7f040000;
+        public static final int ApplicationName=0x7f040000;
+        public static final int cancel_button=0x7f040002;
+        public static final int edit_additional_notes_hint=0x7f040008;
+        public static final int edit_height_hint=0x7f040006;
+        public static final int edit_id_hint=0x7f040005;
+        public static final int edit_weight_hint=0x7f040007;
+        public static final int next_button=0x7f040003;
+        public static final int save_button=0x7f040004;
+        public static final int species_button=0x7f040001;
     }
 }
