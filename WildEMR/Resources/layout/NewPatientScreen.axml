@@ -19,13 +19,13 @@
             android:layout_height="wrap_content"
             android:id="@+id/species_button_spinner_layout">
             <TextView
-                android:text="Species:"
+                android:text="@string/species_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="5.0dp"
-                android:id="@+id/species_text" />
+                android:id="@+id/edit_species_text" />
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_id_layout">
             <TextView
-                android:text="ID:"
+                android:text="@string/id_text"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
