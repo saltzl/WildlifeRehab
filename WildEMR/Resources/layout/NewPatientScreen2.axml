@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:id="@+id/new_patient_screen_2_layout">
         <TextView
-            android:text="Height:"
+            android:text="Height (inches):"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             android:id="@+id/edit_height"
             android:inputType="text" />
         <TextView
-            android:text="Weight:"
+            android:text="Weight (lbs):"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

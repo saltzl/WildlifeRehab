@@ -51,9 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PatientProfileScreen.cs" />
     <Compile Include="NewPatienScreen2.cs" />
     <Compile Include="NewPatientScreen.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="Record.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,6 +71,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SpeciesScreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PatientProfileScreen.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
