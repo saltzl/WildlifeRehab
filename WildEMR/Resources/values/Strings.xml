@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ApplicationName">WildEMR</string>
-    <string name="species_button">Species</string>
-    <string name="cancel_button">Cancel</string>
-    <string name="next_button">Next</string>
-    <string name="save_button">Save</string>
-    <string name="edit_id_hint">Enter ID</string>
-    <string name="edit_height_hint">Enter height</string>
-    <string name="edit_weight_hint">Enter weight</string>
-    <string name="edit_additional_notes_hint">Enter notes</string>
+  <string name="ApplicationName">WildEMR</string>
+  <string name="species_button">Species</string>
+  <string name="cancel_button">Cancel</string>
+  <string name="next_button">Next</string>
+  <string name="save_button">Save</string>
+  <string name="info_button">Info</string>
+  <string name="diet_button">Diet</string>
+  <string name="notes_button">Notes</string>
+  <string name="old_button">Old</string>
+  <string name="new_button">New</string>
+  <string name="edit_id_hint">Enter ID</string>
+  <string name="edit_height_hint">Enter height</string>
+  <string name="edit_weight_hint">Enter weight</string>
+  <string name="edit_additional_notes_hint">Enter notes</string>
+  <string name="species_label">Species</string>
+  <string name="id_label">ID</string>
+  <string name="info_label">Info</string>
+  <string name="height_label">Height</string>
+  <string name="weight_label">Weight</string>
 </resources>

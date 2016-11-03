@@ -1,7 +1,7 @@
 package md5d7f5275a3f6679d00875c7f5086b2161;
 
 
-public class Activity1
+public class NewPatientScreen2
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class Activity1
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("WildEMR.Activity1, WildEMR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", Activity1.class, __md_methods);
+		mono.android.Runtime.register ("WildEMR.NewPatientScreen2, WildEMR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", NewPatientScreen2.class, __md_methods);
 	}
 
 
-	public Activity1 () throws java.lang.Throwable
+	public NewPatientScreen2 () throws java.lang.Throwable
 	{
 		super ();
-		if (getClass () == Activity1.class)
-			mono.android.TypeManager.Activate ("WildEMR.Activity1, WildEMR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == NewPatientScreen2.class)
+			mono.android.TypeManager.Activate ("WildEMR.NewPatientScreen2, WildEMR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 
