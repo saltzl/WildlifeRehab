@@ -192,14 +192,17 @@ namespace WildEMR
 			// aapt resource value: 0x7f050033
 			public const int patientsListView = 2131034163;
 			
+			// aapt resource value: 0x7f050034
+			public const int recordsListView = 2131034164;
+			
 			// aapt resource value: 0x7f05001a
 			public const int save_button2 = 2131034138;
 			
 			// aapt resource value: 0x7f050003
 			public const int settings_btn = 2131034115;
 			
-			// aapt resource value: 0x7f050034
-			public const int speciesListView = 2131034164;
+			// aapt resource value: 0x7f050035
+			public const int speciesListView = 2131034165;
 			
 			// aapt resource value: 0x7f050006
 			public const int species_button_spinner_layout = 2131034118;
@@ -248,7 +251,10 @@ namespace WildEMR
 			public const int PatientsScreen = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int SpeciesScreen = 2130903045;
+			public const int RecordSelector = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int SpeciesScreen = 2130903046;
 			
 			static Layout()
 			{

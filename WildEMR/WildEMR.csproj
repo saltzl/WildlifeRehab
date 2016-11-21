@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="PatientsScreen.cs" />
     <Compile Include="SpeciesScreen.cs" />
     <Compile Include="Species.cs" />
@@ -95,6 +96,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\PatientsScreen.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RecordSelector.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

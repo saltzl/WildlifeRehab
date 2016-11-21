@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using System.Threading.Tasks;
+using Android.Graphics;
+using System.IO;
 
 namespace WildEMR
 {
@@ -31,25 +33,22 @@ namespace WildEMR
             Records.Add(newRecord);
         }
 
-        public void SetImage(Bitmao img)
+        public void SetImage(Bitmap img)
         {
             using (var ms = new MemoryStream())
             {
-                var btmMap = new WriteableBitmap
-                    (img.PixelWidth, img.PixelHeight);
-
-                // write an image into the stream
-                btmMap.SaveJpeg(ms, img.PixelWidth, img.PixelHeight, 0, 100);
-
+                img.Compress(Bitmap.CompressFormat.Png, 0, ms);
                 Image = ms.ToArray();
+
             }
         }
 
-        public Bitmao GetImage()
+        public Bitmap GetImage()
         {
             using (var ms = new MemoryStream(Image))
             {
-                return new Bitmap(ms);
+                BitmapFactory.Options options = new BitmapFactory.Options();
+                return BitmapFactory.DecodeByteArray(ms.ToArray(), 0, (int)ms.Length, options);
             }
         }
     }
