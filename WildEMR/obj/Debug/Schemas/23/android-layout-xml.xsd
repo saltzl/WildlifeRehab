@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>11/21/2016 8:28:23 AM</xs:documentation>
+    <xs:documentation>11/21/2016 1:35:37 PM</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
