@@ -72,46 +72,17 @@
                         android:layout_weight="1"
                         android:id="@+id/patient_id_text" />
                 </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/current_record_button_layout">
+                <Button
+                    android:text="@string/current_record_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/height_layout">
-                    <TextView
-                        android:text="@string/height_label"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:id="@+id/height_label" />
-                    <TextView
-                        android:text="height"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/patient_height" />
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/weight_layout">
-                    <TextView
-                        android:text="@string/weight_label"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:id="@+id/weight_label" />
-                    <TextView
-                        android:text="weight"
-                        android:textAppearance="?android:attr/textAppearanceMedium"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/patient_weight" />
-                </LinearLayout>
+                    android:id="@+id/current_record_button" />
             </LinearLayout>
             <LinearLayout
                 android:orientation="vertical"

@@ -60,140 +60,251 @@ namespace WildEMR
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050005
-			public const int add_photo_button = 2131034117;
-			
-			// aapt resource value: 0x7f050016
-			public const int additional_notes_text = 2131034134;
-			
-			// aapt resource value: 0x7f05000f
-			public const int cancel_button1 = 2131034127;
-			
-			// aapt resource value: 0x7f050019
-			public const int cancel_button2 = 2131034137;
-			
-			// aapt resource value: 0x7f05000d
-			public const int cancel_next_layout = 2131034125;
-			
-			// aapt resource value: 0x7f05000e
-			public const int cancel_next_sublayout = 2131034126;
-			
-			// aapt resource value: 0x7f050018
-			public const int cancel_save_layer = 2131034136;
-			
-			// aapt resource value: 0x7f050028
-			public const int diet_button = 2131034152;
-			
-			// aapt resource value: 0x7f050017
-			public const int edit_additional_notes = 2131034135;
-			
-			// aapt resource value: 0x7f050013
-			public const int edit_height = 2131034131;
-			
-			// aapt resource value: 0x7f05000c
-			public const int edit_id = 2131034124;
-			
-			// aapt resource value: 0x7f050007
-			public const int edit_species_text = 2131034119;
-			
-			// aapt resource value: 0x7f050015
-			public const int edit_weight = 2131034133;
-			
-			// aapt resource value: 0x7f050002
-			public const int existing_patient_btn = 2131034114;
-			
-			// aapt resource value: 0x7f050012
-			public const int height_text = 2131034130;
-			
-			// aapt resource value: 0x7f05000b
-			public const int id_text = 2131034123;
-			
-			// aapt resource value: 0x7f050027
-			public const int info_button = 2131034151;
-			
-			// aapt resource value: 0x7f050026
-			public const int info_diet_buttons_layout = 2131034150;
-			
-			// aapt resource value: 0x7f050000
-			public const int linearLayout1 = 2131034112;
-			
-			// aapt resource value: 0x7f05002b
-			public const int new_button = 2131034155;
-			
-			// aapt resource value: 0x7f050001
-			public const int new_patient_btn = 2131034113;
-			
-			// aapt resource value: 0x7f05000a
-			public const int new_patient_id_layout = 2131034122;
-			
-			// aapt resource value: 0x7f050011
-			public const int new_patient_screen_2_layout = 2131034129;
-			
-			// aapt resource value: 0x7f050004
-			public const int new_patient_screen_layout = 2131034116;
-			
-			// aapt resource value: 0x7f050010
-			public const int next_button1 = 2131034128;
-			
 			// aapt resource value: 0x7f05002a
-			public const int old_button = 2131034154;
+			public const int add_photo_button = 2131034154;
 			
-			// aapt resource value: 0x7f050029
-			public const int old_new_buttons_layout = 2131034153;
+			// aapt resource value: 0x7f05004d
+			public const int additional_notes_button_layout = 2131034189;
 			
-			// aapt resource value: 0x7f050025
-			public const int patient_buttons_layout = 2131034149;
-			
-			// aapt resource value: 0x7f050024
-			public const int patient_id = 2131034148;
-			
-			// aapt resource value: 0x7f050022
-			public const int patient_id_layout = 2131034146;
-			
-			// aapt resource value: 0x7f050023
-			public const int patient_id_text = 2131034147;
-			
-			// aapt resource value: 0x7f05001c
-			public const int patient_image_species_id_layout = 2131034140;
+			// aapt resource value: 0x7f05003b
+			public const int additional_notes_text = 2131034171;
 			
 			// aapt resource value: 0x7f05001d
-			public const int patient_image_view = 2131034141;
+			public const int back_button = 2131034141;
 			
-			// aapt resource value: 0x7f05001b
-			public const int patient_profile_screen_layout = 2131034139;
+			// aapt resource value: 0x7f05001c
+			public const int back_save_buttons_layout = 2131034140;
 			
-			// aapt resource value: 0x7f050021
-			public const int patient_species = 2131034145;
+			// aapt resource value: 0x7f050034
+			public const int cancel_button1 = 2131034164;
 			
-			// aapt resource value: 0x7f05001e
-			public const int patient_species_id_layout = 2131034142;
+			// aapt resource value: 0x7f05003e
+			public const int cancel_button2 = 2131034174;
 			
-			// aapt resource value: 0x7f05001f
-			public const int patient_species_layout = 2131034143;
+			// aapt resource value: 0x7f050032
+			public const int cancel_next_layout = 2131034162;
+			
+			// aapt resource value: 0x7f050033
+			public const int cancel_next_sublayout = 2131034163;
+			
+			// aapt resource value: 0x7f05003d
+			public const int cancel_save_layout = 2131034173;
+			
+			// aapt resource value: 0x7f05004a
+			public const int current_record_button = 2131034186;
+			
+			// aapt resource value: 0x7f050049
+			public const int current_record_button_layout = 2131034185;
+			
+			// aapt resource value: 0x7f050019
+			public const int current_record_screen_buttons_layout = 2131034137;
+			
+			// aapt resource value: 0x7f050001
+			public const int current_record_screen_info_layout = 2131034113;
+			
+			// aapt resource value: 0x7f050000
+			public const int current_record_screen_layout = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int day_spinner = 2131034117;
+			
+			// aapt resource value: 0x7f05004c
+			public const int diet_button = 2131034188;
+			
+			// aapt resource value: 0x7f05004b
+			public const int diet_button_layout = 2131034187;
+			
+			// aapt resource value: 0x7f050023
+			public const int diet_screen_buttons_layout = 2131034147;
 			
 			// aapt resource value: 0x7f050020
-			public const int patient_species_text = 2131034144;
+			public const int diet_screen_info_layout = 2131034144;
 			
-			// aapt resource value: 0x7f05001a
-			public const int save_button2 = 2131034138;
+			// aapt resource value: 0x7f05001f
+			public const int diet_screen_layout = 2131034143;
 			
-			// aapt resource value: 0x7f050003
-			public const int settings_btn = 2131034115;
+			// aapt resource value: 0x7f05003c
+			public const int edit_additional_notes = 2131034172;
 			
-			// aapt resource value: 0x7f050006
-			public const int species_button_spinner_layout = 2131034118;
+			// aapt resource value: 0x7f050024
+			public const int edit_button = 2131034148;
+			
+			// aapt resource value: 0x7f050038
+			public const int edit_height = 2131034168;
+			
+			// aapt resource value: 0x7f050031
+			public const int edit_id = 2131034161;
 			
 			// aapt resource value: 0x7f05002c
-			public const int species_screen_spinner = 2131034156;
+			public const int edit_species_text = 2131034156;
 			
-			// aapt resource value: 0x7f050009
-			public const int species_spinner = 2131034121;
+			// aapt resource value: 0x7f05003a
+			public const int edit_weight = 2131034170;
+			
+			// aapt resource value: 0x7f050027
+			public const int existing_patient_btn = 2131034151;
+			
+			// aapt resource value: 0x7f050037
+			public const int height_text = 2131034167;
+			
+			// aapt resource value: 0x7f050030
+			public const int id_text = 2131034160;
+			
+			// aapt resource value: 0x7f050048
+			public const int info_label = 2131034184;
+			
+			// aapt resource value: 0x7f050047
+			public const int info_layout = 2131034183;
+			
+			// aapt resource value: 0x7f050025
+			public const int linearLayout1 = 2131034149;
+			
+			// aapt resource value: 0x7f050004
+			public const int month_spinner = 2131034116;
+			
+			// aapt resource value: 0x7f050051
+			public const int new_button = 2131034193;
+			
+			// aapt resource value: 0x7f050026
+			public const int new_patient_btn = 2131034150;
+			
+			// aapt resource value: 0x7f05002f
+			public const int new_patient_id_layout = 2131034159;
+			
+			// aapt resource value: 0x7f050036
+			public const int new_patient_screen_2_layout = 2131034166;
+			
+			// aapt resource value: 0x7f050029
+			public const int new_patient_screen_layout = 2131034153;
+			
+			// aapt resource value: 0x7f050035
+			public const int next_button1 = 2131034165;
+			
+			// aapt resource value: 0x7f05004e
+			public const int notes_button = 2131034190;
+			
+			// aapt resource value: 0x7f050040
+			public const int notes_screen_layout = 2131034176;
+			
+			// aapt resource value: 0x7f050041
+			public const int notes_text_layout = 2131034177;
+			
+			// aapt resource value: 0x7f050050
+			public const int old_button = 2131034192;
+			
+			// aapt resource value: 0x7f05004f
+			public const int old_new_buttons_layout = 2131034191;
+			
+			// aapt resource value: 0x7f050003
+			public const int patient_date_label = 2131034115;
+			
+			// aapt resource value: 0x7f050002
+			public const int patient_date_layout = 2131034114;
+			
+			// aapt resource value: 0x7f050021
+			public const int patient_diet_label = 2131034145;
+			
+			// aapt resource value: 0x7f050022
+			public const int patient_diet_text = 2131034146;
+			
+			// aapt resource value: 0x7f050011
+			public const int patient_height_label = 2131034129;
+			
+			// aapt resource value: 0x7f050010
+			public const int patient_height_layout = 2131034128;
+			
+			// aapt resource value: 0x7f050012
+			public const int patient_height_text = 2131034130;
+			
+			// aapt resource value: 0x7f05000e
+			public const int patient_id_label = 2131034126;
+			
+			// aapt resource value: 0x7f05000d
+			public const int patient_id_layout = 2131034125;
+			
+			// aapt resource value: 0x7f05000f
+			public const int patient_id_text = 2131034127;
+			
+			// aapt resource value: 0x7f050045
+			public const int patient_image_view = 2131034181;
+			
+			// aapt resource value: 0x7f050017
+			public const int patient_medication_label = 2131034135;
+			
+			// aapt resource value: 0x7f050016
+			public const int patient_medication_layout = 2131034134;
+			
+			// aapt resource value: 0x7f050018
+			public const int patient_medication_text = 2131034136;
 			
 			// aapt resource value: 0x7f050008
-			public const int species_spinner_layout = 2131034120;
+			public const int patient_name_label = 2131034120;
+			
+			// aapt resource value: 0x7f050007
+			public const int patient_name_layout = 2131034119;
+			
+			// aapt resource value: 0x7f050009
+			public const int patient_name_text = 2131034121;
+			
+			// aapt resource value: 0x7f050042
+			public const int patient_notes_label = 2131034178;
+			
+			// aapt resource value: 0x7f050043
+			public const int patient_notes_text = 2131034179;
+			
+			// aapt resource value: 0x7f050044
+			public const int patient_profile_screen_layout = 2131034180;
+			
+			// aapt resource value: 0x7f05000b
+			public const int patient_species_label = 2131034123;
+			
+			// aapt resource value: 0x7f05000a
+			public const int patient_species_layout = 2131034122;
+			
+			// aapt resource value: 0x7f05000c
+			public const int patient_species_text = 2131034124;
 			
 			// aapt resource value: 0x7f050014
-			public const int weight_text = 2131034132;
+			public const int patient_weight_label = 2131034132;
+			
+			// aapt resource value: 0x7f050013
+			public const int patient_weight_layout = 2131034131;
+			
+			// aapt resource value: 0x7f050015
+			public const int patient_weight_text = 2131034133;
+			
+			// aapt resource value: 0x7f05001b
+			public const int record_notes_button = 2131034139;
+			
+			// aapt resource value: 0x7f05001a
+			public const int record_notes_button_layout = 2131034138;
+			
+			// aapt resource value: 0x7f05001e
+			public const int save_button = 2131034142;
+			
+			// aapt resource value: 0x7f05003f
+			public const int save_button2 = 2131034175;
+			
+			// aapt resource value: 0x7f050028
+			public const int settings_btn = 2131034152;
+			
+			// aapt resource value: 0x7f05002b
+			public const int species_button_spinner_layout = 2131034155;
+			
+			// aapt resource value: 0x7f050052
+			public const int species_screen_spinner = 2131034194;
+			
+			// aapt resource value: 0x7f05002e
+			public const int species_spinner = 2131034158;
+			
+			// aapt resource value: 0x7f05002d
+			public const int species_spinner_layout = 2131034157;
+			
+			// aapt resource value: 0x7f050039
+			public const int weight_text = 2131034169;
+			
+			// aapt resource value: 0x7f050006
+			public const int year_spinner = 2131034118;
 			
 			static Id()
 			{
@@ -209,19 +320,28 @@ namespace WildEMR
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int CurrentRecordScreen = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int NewPatientScreen = 2130903041;
+			public const int DietScreen = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int NewPatientScreen2 = 2130903042;
+			public const int Main = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int PatientProfileScreen = 2130903043;
+			public const int NewPatientScreen = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SpeciesScreen = 2130903044;
+			public const int NewPatientScreen2 = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int NotesScreen = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int PatientProfileScreen = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int SpeciesScreen = 2130903047;
 			
 			static Layout()
 			{
@@ -239,38 +359,74 @@ namespace WildEMR
 			// aapt resource value: 0x7f040000
 			public const int ApplicationName = 2130968576;
 			
+			// aapt resource value: 0x7f04000c
+			public const int back_button = 2130968588;
+			
 			// aapt resource value: 0x7f040002
 			public const int cancel_button = 2130968578;
 			
 			// aapt resource value: 0x7f040006
-			public const int diet_button = 2130968582;
+			public const int current_record_button = 2130968582;
 			
-			// aapt resource value: 0x7f04000c
-			public const int edit_additional_notes_hint = 2130968588;
+			// aapt resource value: 0x7f040019
+			public const int date_label = 2130968601;
 			
-			// aapt resource value: 0x7f04000a
-			public const int edit_height_hint = 2130968586;
+			// aapt resource value: 0x7f040007
+			public const int diet_button = 2130968583;
 			
-			// aapt resource value: 0x7f040009
-			public const int edit_id_hint = 2130968585;
+			// aapt resource value: 0x7f04001a
+			public const int diet_label = 2130968602;
 			
-			// aapt resource value: 0x7f04000b
-			public const int edit_weight_hint = 2130968587;
+			// aapt resource value: 0x7f040011
+			public const int edit_additional_notes_hint = 2130968593;
+			
+			// aapt resource value: 0x7f04000d
+			public const int edit_button = 2130968589;
+			
+			// aapt resource value: 0x7f04000f
+			public const int edit_height_hint = 2130968591;
 			
 			// aapt resource value: 0x7f04000e
-			public const int id_text = 2130968590;
+			public const int edit_id_hint = 2130968590;
+			
+			// aapt resource value: 0x7f040010
+			public const int edit_weight_hint = 2130968592;
+			
+			// aapt resource value: 0x7f040016
+			public const int height_label = 2130968598;
+			
+			// aapt resource value: 0x7f040013
+			public const int id_label = 2130968595;
 			
 			// aapt resource value: 0x7f040005
 			public const int info_button = 2130968581;
 			
-			// aapt resource value: 0x7f040008
-			public const int new_button = 2130968584;
+			// aapt resource value: 0x7f040014
+			public const int info_label = 2130968596;
+			
+			// aapt resource value: 0x7f040018
+			public const int medication_label = 2130968600;
+			
+			// aapt resource value: 0x7f040015
+			public const int name_label = 2130968597;
+			
+			// aapt resource value: 0x7f04000a
+			public const int new_button = 2130968586;
 			
 			// aapt resource value: 0x7f040003
 			public const int next_button = 2130968579;
 			
-			// aapt resource value: 0x7f040007
-			public const int old_button = 2130968583;
+			// aapt resource value: 0x7f040008
+			public const int notes_button = 2130968584;
+			
+			// aapt resource value: 0x7f04001b
+			public const int notes_label = 2130968603;
+			
+			// aapt resource value: 0x7f040009
+			public const int old_button = 2130968585;
+			
+			// aapt resource value: 0x7f04000b
+			public const int record_notes_button = 2130968587;
 			
 			// aapt resource value: 0x7f040004
 			public const int save_button = 2130968580;
@@ -278,8 +434,11 @@ namespace WildEMR
 			// aapt resource value: 0x7f040001
 			public const int species_button = 2130968577;
 			
-			// aapt resource value: 0x7f04000d
-			public const int species_text = 2130968589;
+			// aapt resource value: 0x7f040012
+			public const int species_label = 2130968594;
+			
+			// aapt resource value: 0x7f040017
+			public const int weight_label = 2130968599;
 			
 			static String()
 			{

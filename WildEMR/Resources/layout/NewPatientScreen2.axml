@@ -48,7 +48,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/cancel_save_layer">
+            android:id="@+id/cancel_save_layout">
             <LinearLayout
                 android:orientation="horizontal"
                 android:gravity="bottom"

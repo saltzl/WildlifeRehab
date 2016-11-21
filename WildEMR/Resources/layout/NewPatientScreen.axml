@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/species_button_spinner_layout">
             <TextView
-                android:text="@string/species_text"
+                android:text="@string/species_label"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_id_layout">
             <TextView
-                android:text="@string/id_text"
+                android:text="@string/id_label"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

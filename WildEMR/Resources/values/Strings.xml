@@ -6,10 +6,14 @@
     <string name="next_button">Next</string>
     <string name="save_button">Save</string>
     <string name="info_button">Info</string>
+    <string name="current_record_button">Current Record</string>
     <string name="diet_button">Diet</string>
     <string name="notes_button">Notes</string>
     <string name="old_button">Old</string>
     <string name="new_button">New</string>
+    <string name="record_notes_button">Record Notes</string>
+    <string name="back_button">Back</string>
+    <string name="edit_button">Edit</string>
     <string name="edit_id_hint">Enter ID</string>
     <string name="edit_height_hint">Enter height</string>
     <string name="edit_weight_hint">Enter weight</string>
@@ -17,6 +21,11 @@
     <string name="species_label">Species</string>
     <string name="id_label">ID</string>
     <string name="info_label">Info</string>
+    <string name="name_label">Name</string>
     <string name="height_label">Height</string>
     <string name="weight_label">Weight</string>
+    <string name="medication_label">Medication</string>
+    <string name="date_label">Date</string>
+    <string name="diet_label">Diet</string>
+    <string name="notes_label">Notes</string>
 </resources>
