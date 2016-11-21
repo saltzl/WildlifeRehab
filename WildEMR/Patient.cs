@@ -18,7 +18,7 @@ namespace WildEMR
         public string Identifier { get; set; }
         public int Species { get; set; }
         public List<Record> Records { get; set; }
-        
+        public byte[] Image { get; set;  }
 
         public async Task Create()
         {
@@ -29,6 +29,28 @@ namespace WildEMR
         {
             await DatabaseConnection.Instance.CreateRecordAsync(this,newRecord);
             Records.Add(newRecord);
+        }
+
+        public void SetImage(Bitmao img)
+        {
+            using (var ms = new MemoryStream())
+            {
+                var btmMap = new WriteableBitmap
+                    (img.PixelWidth, img.PixelHeight);
+
+                // write an image into the stream
+                btmMap.SaveJpeg(ms, img.PixelWidth, img.PixelHeight, 0, 100);
+
+                Image = ms.ToArray();
+            }
+        }
+
+        public Bitmao GetImage()
+        {
+            using (var ms = new MemoryStream(Image))
+            {
+                return new Bitmap(ms);
+            }
         }
     }
 }

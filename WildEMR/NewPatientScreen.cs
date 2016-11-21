@@ -61,6 +61,7 @@ namespace WildEMR
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", new_patient.Identifier);
                 extras.PutInt("Patient_SPECIES", new_patient.Species);
+                extras.PutString("Patient_Photo", App._file.Path);
                 new_patient_screen2.PutExtras(extras);
                 StartActivity(new_patient_screen2);
             };

@@ -23,6 +23,7 @@ namespace WildEMR
         EditText height_text;
         EditText weight_text;
         EditText notes_text;
+        string photo_string;
         Patient new_patient = new Patient();
         Record new_record = new Record();
 
@@ -40,6 +41,7 @@ namespace WildEMR
             //Get patient id and species from previous activity
             new_patient.Identifier = Intent.GetStringExtra("Patient_ID");
             new_patient.Species = Intent.GetIntExtra("Patient_SPECIES",0);
+            photo_string = Intent.GetStringExtra("Patient_Photo");
             new_patient.Records = new List<Record>();
 
             height_text = (EditText)FindViewById(Resource.Id.edit_height);
@@ -50,7 +52,10 @@ namespace WildEMR
             save_btn = FindViewById<Button>(Resource.Id.save_button2);
             save_btn.Click += async delegate
             {
+                BitmapFactory.Options options = new BitmapFactory.Options { InJustDecodeBounds = false };
+                var bitmap = BitmapFactory.DecodeFile(fileName, options);
 
+                new_patient.Photo = bitmap.;
                 await new_patient.Create();
                 //Get all of the user input data for the new record
                 new_record.Height = height_text.Text;
@@ -69,6 +74,7 @@ namespace WildEMR
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", new_patient.Identifier);
                 extras.PutInt("Patient_SPECIES", new_patient.Species);
+                extras.PutString("Patient_Photo", App._file.Path);
                 extras.PutString("Patient_HEIGHT", new_record.Height);
                 extras.PutString("Patient_WEIGHT", new_record.Weight);
                 extras.PutString("Patient_NOTES", new_record.Note);
