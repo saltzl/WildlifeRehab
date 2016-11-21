@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>11/3/2016 1:03:47 PM</xs:documentation>
+    <xs:documentation>11/21/2016 10:13:33 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16963,12 +16963,13 @@
             <xs:enumeration value="@id/patient_species_layout" />
             <xs:enumeration value="@id/patient_species_text" />
             <xs:enumeration value="@id/patient_weight" />
+            <xs:enumeration value="@id/patientsListView" />
             <xs:enumeration value="@id/save_button2" />
             <xs:enumeration value="@id/settings_btn" />
             <xs:enumeration value="@id/species_button_spinner_layout" />
-            <xs:enumeration value="@id/species_screen_spinner" />
             <xs:enumeration value="@id/species_spinner" />
             <xs:enumeration value="@id/species_spinner_layout" />
+            <xs:enumeration value="@id/speciesListView" />
             <xs:enumeration value="@id/weight_label" />
             <xs:enumeration value="@id/weight_layout" />
             <xs:enumeration value="@id/weight_text" />

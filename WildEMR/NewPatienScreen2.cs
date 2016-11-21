@@ -38,9 +38,9 @@ namespace WildEMR
             NameValueCollection parameters = new NameValueCollection();
 
             //Get patient id and species from previous activity
-            new_patient.Patient_id = Intent.GetStringExtra("Patient_ID");
-            new_patient.Patient_species = Intent.GetStringExtra("Patient_SPECIES");
-            new_patient.Record_list = new List<Record>();
+            new_patient.Identifier = Intent.GetStringExtra("Patient_ID");
+            new_patient.Species = Intent.GetIntExtra("Patient_SPECIES",0);
+            new_patient.Records = new List<Record>();
 
             height_text = (EditText)FindViewById(Resource.Id.edit_height);
             weight_text = (EditText)FindViewById(Resource.Id.edit_weight);
@@ -48,15 +48,16 @@ namespace WildEMR
 
             //Save button event handler,
             save_btn = FindViewById<Button>(Resource.Id.save_button2);
-            save_btn.Click += delegate
+            save_btn.Click += async delegate
             {
+
+                await new_patient.Create();
                 //Get all of the user input data for the new record
-                new_record.Record_id = 1;
-                new_record.Patient_height = height_text.Text;
-                new_record.Patient_weight = weight_text.Text;
-                new_record.Patient_note = notes_text.Text;
+                new_record.Height = height_text.Text;
+                new_record.Weight = weight_text.Text;
+                new_record.Note = notes_text.Text;
                 //Add the record data to the new patient
-                new_patient.Record_list.Add(new_record);
+                await new_patient.AddRecord(new_record);
 
                 //Pass the new patient along to be pushed to the database
                 //parameters.Add("NEW_PATIENT", new_patient);
@@ -66,12 +67,12 @@ namespace WildEMR
                 //Pass the new patient information to the Patient Profile Screen
                 var existing_info_screen = new Intent(this, typeof(PatientProfileScreen));
                 Bundle extras = new Bundle();
-                extras.PutString("Patient_ID", new_patient.Patient_id);
-                extras.PutString("Patient_SPECIES", new_patient.Patient_species);
-                extras.PutString("Patient_HEIGHT", new_record.Patient_height);
-                extras.PutString("Patient_WEIGHT", new_record.Patient_weight);
-                extras.PutString("Patient_NOTES", new_record.Patient_note);
-                extras.PutString("NEW_PATIENT", "true");
+                extras.PutString("Patient_ID", new_patient.Identifier);
+                extras.PutInt("Patient_SPECIES", new_patient.Species);
+                extras.PutString("Patient_HEIGHT", new_record.Height);
+                extras.PutString("Patient_WEIGHT", new_record.Weight);
+                extras.PutString("Patient_NOTES", new_record.Note);
+                extras.PutBoolean("NEW_PATIENT", true);
                 existing_info_screen.PutExtras(extras);
                 StartActivity(existing_info_screen);
             };
@@ -83,16 +84,6 @@ namespace WildEMR
                 StartActivity(typeof(MainActivity));
             };
 
-        }
-
-        //Check to see if values were uploaded succesfully (Work in Progress)
-        void client_UploadValuesCompleted(object sender, UploadValuesCompletedEventArgs e)
-        {
-            //string id = Encoding.UTF8.GetString(e.Result);
-            //int newID = 0;
-
-            //int.TryParse(id, out newID);
-            return;
         }
     }
 }

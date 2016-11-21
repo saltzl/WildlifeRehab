@@ -14,9 +14,9 @@ namespace WildEMR
 {
     public class Record
     {
-        public int Record_id { get; set; }
-        public string Patient_height { get; set; }
-        public string Patient_weight { get; set; }
-        public string Patient_note { get; set; }
+        public int ID { get; set; }
+        public string Height { get; set; }
+        public string Weight { get; set; }
+        public string Note { get; set; }
     }
 }

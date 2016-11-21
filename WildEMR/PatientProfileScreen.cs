@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Provider;
+using Android.Content.PM;
 
 namespace WildEMR
 {
@@ -22,7 +24,7 @@ namespace WildEMR
         Patient current_patient = new Patient();
         Record current_record = new Record();
         
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.PatientProfileScreen);
@@ -33,22 +35,29 @@ namespace WildEMR
             record_height = (TextView)FindViewById(Resource.Id.patient_height);
 
             //Check if a new patient is being passed in from a previous activity
-            String is_new_patient = Intent.GetStringExtra("NEW_PATIENT");
-            if (is_new_patient == "true")
+            var is_new_patient = Intent.GetBooleanExtra("NEW_PATIENT", false);
+            if (is_new_patient)
             {
                 //Get all of the patient information from the previous activity
-                current_patient.Patient_id = Intent.GetStringExtra("Patient_ID");
-                current_patient.Patient_species = Intent.GetStringExtra("Patient_SPECIES");
-                current_record.Patient_height = Intent.GetStringExtra("Patient_HEIGHT");
-                current_record.Patient_weight = Intent.GetStringExtra("Patient_WEIGHT");
-                current_record.Patient_note = Intent.GetStringExtra("Patient_NOTE");
+                current_patient.Identifier = Intent.GetStringExtra("Patient_ID");
+                current_patient.Species = Intent.GetIntExtra("Patient_SPECIES",0);
+                current_record.Height = Intent.GetStringExtra("Patient_HEIGHT");
+                current_record.Weight = Intent.GetStringExtra("Patient_WEIGHT");
+                current_record.Note = Intent.GetStringExtra("Patient_NOTE");
 
                 //Update the text fields
-                species_text.Text = current_patient.Patient_species;
-                id_text.Text = current_patient.Patient_id;
-                record_weight.Text = current_record.Patient_weight;
-                record_height.Text = current_record.Patient_height;
+                species_text.Text = current_patient.Species.ToString();
+                id_text.Text = current_patient.Identifier;
+                record_weight.Text = current_record.Weight;
+                record_height.Text = current_record.Height;
+            } else {
+                var ident = Intent.GetStringExtra("Patient_ID");
+                var species = Intent.GetIntExtra("Patient_SPECIES", 0);
+
+                current_patient = await DatabaseConnection.Instance.GetPatientAsync(species, ident);
             }
         }
+
+
     }
 }

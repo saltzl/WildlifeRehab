@@ -57,10 +57,11 @@ public final class R {
         public static final int patient_species_layout=0x7f050020;
         public static final int patient_species_text=0x7f050022;
         public static final int patient_weight=0x7f05002b;
+        public static final int patientsListView=0x7f050033;
         public static final int save_button2=0x7f05001a;
         public static final int settings_btn=0x7f050003;
+        public static final int speciesListView=0x7f050034;
         public static final int species_button_spinner_layout=0x7f050006;
-        public static final int species_screen_spinner=0x7f050033;
         public static final int species_spinner=0x7f050009;
         public static final int species_spinner_layout=0x7f050008;
         public static final int weight_label=0x7f05002a;
@@ -72,7 +73,8 @@ public final class R {
         public static final int newpatientscreen=0x7f030001;
         public static final int newpatientscreen2=0x7f030002;
         public static final int patientprofilescreen=0x7f030003;
-        public static final int speciesscreen=0x7f030004;
+        public static final int patientsscreen=0x7f030004;
+        public static final int speciesscreen=0x7f030005;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040000;

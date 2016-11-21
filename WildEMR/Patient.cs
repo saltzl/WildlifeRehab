@@ -9,13 +9,26 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Threading.Tasks;
 
 namespace WildEMR
 {
     public class Patient
     {
-        public string Patient_id { get; set; }
-        public string Patient_species { get; set; }
-        public List<Record> Record_list { get; set; }
+        public string Identifier { get; set; }
+        public int Species { get; set; }
+        public List<Record> Records { get; set; }
+        
+
+        public async Task Create()
+        {
+           await DatabaseConnection.Instance.CreatePatientAsync(this);
+        }
+
+        public async Task AddRecord(Record newRecord)
+        {
+            await DatabaseConnection.Instance.CreateRecordAsync(this,newRecord);
+            Records.Add(newRecord);
+        }
     }
 }
