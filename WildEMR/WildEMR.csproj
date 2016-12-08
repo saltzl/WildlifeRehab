@@ -70,7 +70,7 @@
     <Compile Include="Species.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="PatientProfileScreen.cs" />
-    <Compile Include="NewPatienScreen2.cs" />
+    <Compile Include="NewPatientScreen2.cs" />
     <Compile Include="NewPatientScreen.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Patient.cs" />
