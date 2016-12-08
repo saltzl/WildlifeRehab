@@ -36,9 +36,9 @@ namespace WildEMR
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", identifier);
                 extras.PutInt("Patient_SPECIES", species);
-                extras.PutString("Patient_HEIGHT", clicked.Height);
-                extras.PutString("Patient_WEIGHT", clicked.Weight);
-                extras.PutString("Patient_NOTES", clicked.Note);
+                extras.PutString("Patient_Subjective", clicked.Subjective);
+                extras.PutString("Patient_Objective", clicked.Objective);
+                extras.PutString("Patient_Assesment", clicked.Assesment);
                 extras.PutBoolean("NEW_PATIENT", false);
                 extras.PutBoolean("newRecord", false);
                 existing_info_screen.PutExtras(extras);

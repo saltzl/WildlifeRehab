@@ -217,7 +217,7 @@ C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\assets\WildEMR.dll.mdb
-C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll.mdb
 C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\res\layout\recordselector.xml
 C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll.mdb
-C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\bin\Debug\WildEMR.dll.mdb
+C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll.mdb
+C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\bin\Debug\WildEMR.dll.mdb

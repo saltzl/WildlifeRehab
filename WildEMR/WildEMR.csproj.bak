@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -70,7 +70,7 @@
     <Compile Include="Species.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="PatientProfileScreen.cs" />
-    <Compile Include="NewPatienScreen2.cs" />
+    <Compile Include="NewPatientScreen2.cs" />
     <Compile Include="NewPatientScreen.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Patient.cs" />

@@ -21,9 +21,9 @@ namespace WildEMR
 
         Button save_btn;
         Button cancel_btn;
-        EditText height_text;
-        EditText weight_text;
-        EditText notes_text;
+        EditText subjectiveText;
+        EditText objectiveText;
+        EditText assessmentText;
         string photo_string;
         Patient new_patient = new Patient();
         Record new_record = new Record();
@@ -43,9 +43,9 @@ namespace WildEMR
 
             new_patient.Records = new List<Record>();
 
-            height_text = (EditText)FindViewById(Resource.Id.edit_height);
-            weight_text = (EditText)FindViewById(Resource.Id.edit_weight);
-            notes_text = (EditText)FindViewById(Resource.Id.edit_additional_notes);
+            subjectiveText = (EditText)FindViewById(Resource.Id.edit_height);
+            objectiveText = (EditText)FindViewById(Resource.Id.edit_weight);
+            assessmentText = (EditText)FindViewById(Resource.Id.edit_additional_notes);
 
 
 
@@ -64,9 +64,9 @@ namespace WildEMR
                     await new_patient.Create();
                 }
                 //Get all of the user input data for the new record
-                new_record.Height = height_text.Text;
-                new_record.Weight = weight_text.Text;
-                new_record.Note = notes_text.Text;
+                new_record.Subjective = subjectiveText.Text;
+                new_record.Objective  = objectiveText.Text;
+                new_record.Assesment = assessmentText.Text;
                 //Add the record data to the new patient
                 await new_patient.AddRecord(new_record);
                 
@@ -76,9 +76,9 @@ namespace WildEMR
                 extras.PutString("Patient_ID", new_patient.Identifier);
                 extras.PutInt("Patient_SPECIES", new_patient.species_id);
                 extras.PutString("Patient_Photo", photo_string);
-                extras.PutString("Patient_HEIGHT", new_record.Height);
-                extras.PutString("Patient_WEIGHT", new_record.Weight);
-                extras.PutString("Patient_NOTES", new_record.Note);
+                extras.PutString("Patient_Subjective", new_record.Subjective);
+                extras.PutString("Patient_Objective", new_record.Objective);
+                extras.PutString("Patient_Assesment", new_record.Assesment);
                 extras.PutBoolean("NEW_PATIENT", isnew);
                 existing_info_screen.PutExtras(extras);
                 StartActivity(existing_info_screen);

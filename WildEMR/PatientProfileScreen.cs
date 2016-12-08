@@ -56,9 +56,9 @@ namespace WildEMR
 
                     current_patient.SetImage(bitmap);
                 }
-                current_record.Height = Intent.GetStringExtra("Patient_HEIGHT");
-                current_record.Weight = Intent.GetStringExtra("Patient_WEIGHT");
-                current_record.Note = Intent.GetStringExtra("Patient_NOTE");
+                current_record.Subjective = Intent.GetStringExtra("Patient_Subjective");
+                current_record.Objective = Intent.GetStringExtra("Patient_Objective");
+                current_record.Assesment = Intent.GetStringExtra("Patient_Assesment");
 
             } else {
                 var ident = Intent.GetStringExtra("Patient_ID");
@@ -71,15 +71,15 @@ namespace WildEMR
                 }
                 else
                 {
-                    current_record.Height = Intent.GetStringExtra("Patient_HEIGHT");
-                    current_record.Weight = Intent.GetStringExtra("Patient_WEIGHT");
-                    current_record.Note = Intent.GetStringExtra("Patient_NOTE");
+                    current_record.Subjective = Intent.GetStringExtra("Patient_Subjective");
+                    current_record.Objective = Intent.GetStringExtra("Patient_Objective");
+                    current_record.Assesment = Intent.GetStringExtra("Patient_Assesment");
                 }
             }
             species_text.Text = current_patient.species_id.ToString();
             id_text.Text = current_patient.Identifier;
-            record_weight.Text = current_record.Weight;
-            record_height.Text = current_record.Height;
+            record_weight.Text = current_record.Subjective;
+            record_height.Text = current_record.Objective;
             if(photo_string != "")
                 imageView.SetImageBitmap(current_patient.GetImage());
 

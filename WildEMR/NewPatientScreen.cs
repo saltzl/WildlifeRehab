@@ -32,6 +32,11 @@ namespace WildEMR
         Button cancel_btn;
         Spinner species_spinner;
         EditText id_text;
+        EditText color_text;
+        EditText sex_text;
+        EditText age_text;
+        EditText location_text;
+
         Patient new_patient = new Patient();
 
         protected override async void OnCreate(Bundle savedInstanceState)
@@ -47,6 +52,10 @@ namespace WildEMR
             species_spinner = FindViewById<Spinner>(Resource.Id.species_spinner);
             species_spinner.Adapter = adapter;
             id_text = (EditText)FindViewById(Resource.Id.edit_id);
+            sex_text = (EditText)FindViewById(Resource.Id.edit_sex);
+            age_text = (EditText)FindViewById(Resource.Id.edit_age);
+            color_text = (EditText)FindViewById(Resource.Id.edit_color);
+            location_text   = (EditText)FindViewById(Resource.Id.edit_location);
 
             //Next button handler
             next_btn = FindViewById<Button>(Resource.Id.next_button1);
@@ -54,7 +63,15 @@ namespace WildEMR
             {
                 //Set user input to patient object
                 new_patient.Identifier = id_text.Text;
+                new_patient.Sex = sex_text.Text;
+                int age;
+                if (int.TryParse(age_text.Text, out age))
+                    new_patient.Age = age; 
+                new_patient.Color = color_text.Text;
+                new_patient.LocationFound = location_text.Text;
+
                 new_patient.species_id = species_list.Where(species => species.Name == species_spinner.SelectedItem.ToString()).SingleOrDefault().ID;
+
 
                 //Pass information along to the next activity
                 var new_patient_screen2 = new Intent(this, typeof(NewPatientScreen2));
