@@ -15,8 +15,9 @@ namespace WildEMR
     public class Record
     {
         public int ID { get; set; }
-        public string Height { get; set; }
-        public string Weight { get; set; }
-        public string Note { get; set; }
+        public string Subjective { get; set; }
+        public string Objective { get; set; }
+        public string Assesment { get; set; }
+        public string Plan { get; set; }
     }
 }

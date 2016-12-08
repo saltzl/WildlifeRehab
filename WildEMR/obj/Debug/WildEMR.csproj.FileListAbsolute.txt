@@ -168,7 +168,6 @@ C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\bin\Debug\Mono.CSharp.dll.mdb
 C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
 C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\android\assets\Mono.CSharp.dll.mdb
 C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\res\layout\patientsscreen.xml
-C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll.mdb
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\WildEMR.csprojResolveAssemblyReference.cache
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\WildEMR.pdb
@@ -219,4 +218,6 @@ C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\android\assets\WildEMR.dll.mdb
 C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll.mdb
-C:\Users\McCall Saltzman\Documents\SDND\WildlifeRehab\WildEMR\bin\Debug\WildEMR.dll.mdb
+C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\res\layout\recordselector.xml
+C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\obj\Debug\WildEMR.dll.mdb
+C:\Users\McCall\Source\Repos\WildlifeRehab\WildEMR\bin\Debug\WildEMR.dll.mdb

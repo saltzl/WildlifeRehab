@@ -1,14 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using System.Threading.Tasks;
 using Android.Graphics;
 using System.IO;
@@ -22,6 +12,10 @@ namespace WildEMR
         public Species Species { get; set; }
         public List<Record> Records { get; set; }
         public byte[] Image { get; set;  }
+        public string Sex { get; set; }
+        public int Age { get; set; }
+        public string Color { get; set; }
+        public string LocationFound { get; set; }
 
         public async Task Create()
         {
