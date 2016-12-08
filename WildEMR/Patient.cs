@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Android.Graphics;
 using System.IO;
+using System;
 
 namespace WildEMR
 {
@@ -25,7 +26,6 @@ namespace WildEMR
         public async Task AddRecord(Record newRecord)
         {
             await DatabaseConnection.Instance.CreateRecordAsync(this,newRecord);
-            Records.Add(newRecord);
         }
 
         public void SetImage(Bitmap img)

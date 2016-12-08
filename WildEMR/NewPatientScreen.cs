@@ -77,6 +77,11 @@ namespace WildEMR
                 var new_patient_screen2 = new Intent(this, typeof(NewPatientScreen2));
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", new_patient.Identifier);
+                extras.PutString("Patient_Sex", new_patient.Sex);
+                extras.PutInt("Patient_Age", new_patient.Age);
+                extras.PutString("Patient_Color", new_patient.Color);
+                extras.PutString("Patient_Loc", new_patient.LocationFound);
+
                 extras.PutInt("Patient_SPECIES", new_patient.species_id);
                 if (App._file == null)
                 {

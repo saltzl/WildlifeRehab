@@ -10,8 +10,8 @@
         android:id="@+id/new_patient_screen_layout">
         <ImageButton
             android:src="@android:drawable/ic_menu_gallery"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:id="@+id/add_photo_button" />
         <LinearLayout
             android:orientation="horizontal"
@@ -44,14 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_id_layout">
-            <TextView
-                android:text="@string/id_label"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="9"
-                android:paddingLeft="5.0dp"
-                android:id="@+id/id_text" />
+
             <EditText
                 android:hint="@string/edit_id_hint"
                 android:layout_width="fill_parent"
@@ -65,14 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_sex_layout">
-            <TextView
-                android:text="@string/sex_label"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="9"
-                android:paddingLeft="5.0dp"
-                android:id="@+id/sex_text" />
+           
             <EditText
                 android:hint="@string/edit_sex_hint"
                 android:layout_width="fill_parent"
@@ -86,14 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_color_layout">
-        <TextView
-            android:text="@string/sex_label"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:paddingLeft="5.0dp"
-            android:id="@+id/color_text" />
+       
         <EditText
             android:hint="@string/edit_color_hint"
             android:layout_width="fill_parent"
@@ -107,14 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_age_layout">
-        <TextView
-            android:text="@string/age_label"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:paddingLeft="5.0dp"
-            android:id="@+id/age_text" />
+        
         <EditText
             android:hint="@string/edit_age_hint"
             android:layout_width="fill_parent"
@@ -128,14 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/new_patient_location_layout">
-        <TextView
-            android:text="@string/location_label"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="9"
-            android:paddingLeft="5.0dp"
-            android:id="@+id/location_text" />
+        
         <EditText
             android:hint="@string/edit_location_hint"
             android:layout_width="fill_parent"

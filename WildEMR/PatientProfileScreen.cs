@@ -22,6 +22,14 @@ namespace WildEMR
         TextView species_text;
         TextView record_weight;
         TextView record_height;
+        TextView record_assessment;
+        TextView record_plan;
+        TextView patient_color;
+        TextView patient_loc;
+        TextView patient_sex;
+        TextView patient_age;
+
+
         Patient current_patient = new Patient();
         Record current_record = new Record();
         ImageView imageView;
@@ -32,56 +40,46 @@ namespace WildEMR
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.PatientProfileScreen);
 
+            FragmentManager.ExecutePendingTransactions();
             id_text = (TextView)FindViewById(Resource.Id.patient_id_text);
             species_text = (TextView)FindViewById(Resource.Id.patient_species_text);
             record_weight = (TextView)FindViewById(Resource.Id.patient_weight);
             record_height = (TextView)FindViewById(Resource.Id.patient_height);
+            patient_age = (TextView)FindViewById(Resource.Id.patient_age_text);
+            patient_sex = (TextView)FindViewById(Resource.Id.patient_sex_text);
+            patient_color = (TextView)FindViewById(Resource.Id.patient_color_text);
+            patient_loc = (TextView)FindViewById(Resource.Id.patient_loc_text);
+
+
             imageView = (ImageView)FindViewById(Resource.Id.patient_image_view);
 
             //Check if a new patient is being passed in from a previous activity
             var is_new_patient = Intent.GetBooleanExtra("NEW_PATIENT", false);
             var isNewRecord = Intent.GetBooleanExtra("newRecord", true);
 
-            if (is_new_patient)
+            var ident = Intent.GetStringExtra("Patient_ID");
+            var species = Intent.GetIntExtra("Patient_SPECIES", 0);
+            var other = Intent.GetIntExtra("species", 0);
+            var recordNum = Intent.GetIntExtra("Record_num", 0);
+            current_patient = await DatabaseConnection.Instance.GetPatientAsync(species, ident);
+            if (isNewRecord)
             {
-                //Get all of the patient information from the previous activity
-                current_patient.Identifier = Intent.GetStringExtra("Patient_ID");
-                current_patient.species_id = Intent.GetIntExtra("Patient_SPECIES",0);
-                photo_string = Intent.GetStringExtra("Patient_Photo");
-                if (photo_string != "")
-                {
-                    BitmapFactory.Options options = new BitmapFactory.Options { InJustDecodeBounds = false };
-                    var bitmap = BitmapFactory.DecodeFile(photo_string, options);
-
-
-                    current_patient.SetImage(bitmap);
-                }
-                current_record.Subjective = Intent.GetStringExtra("Patient_Subjective");
-                current_record.Objective = Intent.GetStringExtra("Patient_Objective");
-                current_record.Assesment = Intent.GetStringExtra("Patient_Assesment");
-
-            } else {
-                var ident = Intent.GetStringExtra("Patient_ID");
-                var species = Intent.GetIntExtra("Patient_SPECIES", 0);
-
-                current_patient = await DatabaseConnection.Instance.GetPatientAsync(species, ident);
-                if (isNewRecord)
-                {
-                    current_record = (await DatabaseConnection.Instance.GetRecordAsync(species,ident)).Last();
-                }
-                else
-                {
-                    current_record.Subjective = Intent.GetStringExtra("Patient_Subjective");
-                    current_record.Objective = Intent.GetStringExtra("Patient_Objective");
-                    current_record.Assesment = Intent.GetStringExtra("Patient_Assesment");
-                }
+                current_record = (await DatabaseConnection.Instance.GetRecordAsync(species, ident)).Last();
             }
-            species_text.Text = current_patient.species_id.ToString();
+            else
+            {
+                current_record = (await DatabaseConnection.Instance.GetRecordAsync(species, ident))[recordNum];
+            }
+            species_text.Text = current_patient.Species.Name;
             id_text.Text = current_patient.Identifier;
-            record_weight.Text = current_record.Subjective;
-            record_height.Text = current_record.Objective;
-            if(photo_string != "")
-                imageView.SetImageBitmap(current_patient.GetImage());
+            patient_age.Text = current_patient.Age.ToString();
+            patient_sex.Text = current_patient.Sex;
+            patient_color.Text = current_patient.Color;
+            patient_loc.Text = current_patient.LocationFound;
+
+
+            record_weight.Text = current_record.Objective;
+            record_height.Text = current_record.Subjective;
 
             var newButton = (Button)FindViewById(Resource.Id.new_button);
 
@@ -91,7 +89,7 @@ namespace WildEMR
                 var newRecordScreen = new Intent(this, typeof(NewPatientScreen2));
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", current_patient.Identifier);
-                extras.PutInt("Patient_SPECIES", current_patient.species_id);
+                extras.PutInt("Patient_SPECIES", current_patient.Species.ID);
                 extras.PutBoolean("newPatient", false);
                 newRecordScreen.PutExtras(extras);
                 StartActivity(newRecordScreen);

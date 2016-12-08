@@ -24,6 +24,7 @@ namespace WildEMR
         EditText subjectiveText;
         EditText objectiveText;
         EditText assessmentText;
+        EditText planText;
         string photo_string;
         Patient new_patient = new Patient();
         Record new_record = new Record();
@@ -36,16 +37,23 @@ namespace WildEMR
 
             //Get patient id and species from previous activity
             new_patient.Identifier = Intent.GetStringExtra("Patient_ID");
+            new_patient.Sex = Intent.GetStringExtra("Patient_Sex");
+            new_patient.Color = Intent.GetStringExtra("Patient_Color");
+            new_patient.LocationFound = Intent.GetStringExtra("Patient_Loc");
+            new_patient.Age = Intent.GetIntExtra("Patient_Age", 0);
+
             new_patient.species_id = Intent.GetIntExtra("Patient_SPECIES",0);
             photo_string = Intent.GetStringExtra("Patient_Photo");
 
             var isnew = Intent.GetBooleanExtra("newPatient", true);
-
-            new_patient.Records = new List<Record>();
-
-            subjectiveText = (EditText)FindViewById(Resource.Id.edit_height);
-            objectiveText = (EditText)FindViewById(Resource.Id.edit_weight);
-            assessmentText = (EditText)FindViewById(Resource.Id.edit_additional_notes);
+            if (isnew)
+            {
+                new_patient.Records = new List<Record>();
+            }
+            subjectiveText = (EditText)FindViewById(Resource.Id.edit_subjective);
+            objectiveText = (EditText)FindViewById(Resource.Id.edit_objective);
+            assessmentText = (EditText)FindViewById(Resource.Id.edit_assessment);
+            planText = (EditText)FindViewById(Resource.Id.edit_plan);
 
 
 
@@ -67,6 +75,7 @@ namespace WildEMR
                 new_record.Subjective = subjectiveText.Text;
                 new_record.Objective  = objectiveText.Text;
                 new_record.Assesment = assessmentText.Text;
+                new_record.Plan = planText.Text;
                 //Add the record data to the new patient
                 await new_patient.AddRecord(new_record);
                 
@@ -79,6 +88,7 @@ namespace WildEMR
                 extras.PutString("Patient_Subjective", new_record.Subjective);
                 extras.PutString("Patient_Objective", new_record.Objective);
                 extras.PutString("Patient_Assesment", new_record.Assesment);
+                extras.PutString("Patient_Plan", new_record.Plan);
                 extras.PutBoolean("NEW_PATIENT", isnew);
                 existing_info_screen.PutExtras(extras);
                 StartActivity(existing_info_screen);

@@ -15,9 +15,10 @@
   <string name="edit_color_hint">Enter Color</string>
   <string name="edit_age_hint">Enter Age</string>
   <string name="edit_location_hint">Enter Location Found</string>
-  <string name="edit_height_hint">Enter height</string>
-  <string name="edit_weight_hint">Enter weight</string>
-  <string name="edit_additional_notes_hint">Enter notes</string>
+  <string name="subjective_hint">Subjective</string>
+  <string name="objective_hint">Objective</string>
+  <string name="assessment_hint">Assessment</string>
+  <string name="plan_hint">Plan</string>
   <string name="species_label">Species</string>
   <string name="id_label">ID</string>
   <string name="sex_label">Sex</string>
@@ -25,6 +26,8 @@
   <string name="age_label">Age</string>
   <string name="location_label">Location</string>
   <string name="info_label">Info</string>
-  <string name="height_label">Height</string>
-  <string name="weight_label">Weight</string>
+  <string name="subjective_label">Subjective</string>
+  <string name="objective_label">Objective</string>
+  <string name="assessment_label">Assessment</string>
+  <string name="plan_label">Plan</string>
 </resources>

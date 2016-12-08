@@ -15,9 +15,8 @@ namespace WildEMR
 
         protected override async void OnCreate(Bundle bundle)
         {
-            SetContentView(Resource.Layout.SpeciesScreen);
-
             base.OnCreate(bundle);
+            SetContentView(Resource.Layout.SpeciesScreen);
 
             //Get user input for patient ID and species
             var species_list = await DatabaseConnection.Instance.GetSpeciesAsync();
