@@ -71,22 +71,35 @@ namespace WildEMR
 
         public async Task<Patient> GetPatientAsync(int speciesID, string identifier)
         {
-            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "patient/{0}", speciesID, identifier));
+            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "patient/{0}/{1}", speciesID, identifier));
             var response = await client.GetAsync(requestURI);
 
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
-                var species = JsonConvert.DeserializeObject<Patient>(content);
-                return species;
+                var patient = JsonConvert.DeserializeObject<Patient>(content);
+                return patient;
             }
             return null;
         }
 
+        public async Task<List<Record>> GetRecordAsync(int speciesID, string identifier)
+        {
+            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "records/{0}/{1}", speciesID, identifier));
+            var response = await client.GetAsync(requestURI);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var record = JsonConvert.DeserializeObject<List<Record>>(content);
+                return record;
+            }
+            return null;
+        }
         public async Task CreatePatientAsync(Patient newPatient)
         {
 
-            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "patient/{0}", newPatient.Species));
+            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "patient/{0}", newPatient.species_id));
 
             var json = JsonConvert.SerializeObject(newPatient);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -99,7 +112,7 @@ namespace WildEMR
         public async Task CreateRecordAsync(Patient patient, Record newRecord)
         {
 
-            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "record/{0}/{1}", patient.Species, patient.Identifier));
+            var requestURI = new Uri(String.Format(DatabaseURI.ToString() + "record/{0}/{1}", patient.species_id, patient.Identifier));
 
             var json = JsonConvert.SerializeObject(newRecord);
             var content = new StringContent(json, Encoding.UTF8, "application/json");

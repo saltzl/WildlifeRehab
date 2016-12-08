@@ -36,7 +36,7 @@ namespace WildEMR
 
             //Get patient id and species from previous activity
             new_patient.Identifier = Intent.GetStringExtra("Patient_ID");
-            new_patient.Species = Intent.GetIntExtra("Patient_SPECIES",0);
+            new_patient.species_id = Intent.GetIntExtra("Patient_SPECIES",0);
             photo_string = Intent.GetStringExtra("Patient_Photo");
 
             var isnew = Intent.GetBooleanExtra("newPatient", true);
@@ -55,9 +55,12 @@ namespace WildEMR
             {
                 if (isnew)
                 {
-                    BitmapFactory.Options options = new BitmapFactory.Options();
-                    var bitmap = BitmapFactory.DecodeFile(photo_string, options);
-                    new_patient.SetImage(bitmap);
+                    if (photo_string != "")
+                    {
+                        BitmapFactory.Options options = new BitmapFactory.Options();
+                        var bitmap = BitmapFactory.DecodeFile(photo_string, options);
+                        new_patient.SetImage(bitmap);
+                    }
                     await new_patient.Create();
                 }
                 //Get all of the user input data for the new record
@@ -71,7 +74,7 @@ namespace WildEMR
                 var existing_info_screen = new Intent(this, typeof(PatientProfileScreen));
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", new_patient.Identifier);
-                extras.PutInt("Patient_SPECIES", new_patient.Species);
+                extras.PutInt("Patient_SPECIES", new_patient.species_id);
                 extras.PutString("Patient_Photo", photo_string);
                 extras.PutString("Patient_HEIGHT", new_record.Height);
                 extras.PutString("Patient_WEIGHT", new_record.Weight);

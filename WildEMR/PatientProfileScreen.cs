@@ -46,13 +46,16 @@ namespace WildEMR
             {
                 //Get all of the patient information from the previous activity
                 current_patient.Identifier = Intent.GetStringExtra("Patient_ID");
-                current_patient.Species = Intent.GetIntExtra("Patient_SPECIES",0);
+                current_patient.species_id = Intent.GetIntExtra("Patient_SPECIES",0);
                 photo_string = Intent.GetStringExtra("Patient_Photo");
+                if (photo_string != "")
+                {
+                    BitmapFactory.Options options = new BitmapFactory.Options { InJustDecodeBounds = false };
+                    var bitmap = BitmapFactory.DecodeFile(photo_string, options);
 
-                BitmapFactory.Options options = new BitmapFactory.Options { InJustDecodeBounds = false };
-                var bitmap = BitmapFactory.DecodeFile(photo_string, options);
 
-                current_patient.SetImage(bitmap);
+                    current_patient.SetImage(bitmap);
+                }
                 current_record.Height = Intent.GetStringExtra("Patient_HEIGHT");
                 current_record.Weight = Intent.GetStringExtra("Patient_WEIGHT");
                 current_record.Note = Intent.GetStringExtra("Patient_NOTE");
@@ -64,7 +67,7 @@ namespace WildEMR
                 current_patient = await DatabaseConnection.Instance.GetPatientAsync(species, ident);
                 if (isNewRecord)
                 {
-                    current_record = current_patient.Records.Last();
+                    current_record = (await DatabaseConnection.Instance.GetRecordAsync(species,ident)).Last();
                 }
                 else
                 {
@@ -73,11 +76,12 @@ namespace WildEMR
                     current_record.Note = Intent.GetStringExtra("Patient_NOTE");
                 }
             }
-            species_text.Text = current_patient.Species.ToString();
+            species_text.Text = current_patient.species_id.ToString();
             id_text.Text = current_patient.Identifier;
             record_weight.Text = current_record.Weight;
             record_height.Text = current_record.Height;
-            imageView.SetImageBitmap(current_patient.GetImage());
+            if(photo_string != "")
+                imageView.SetImageBitmap(current_patient.GetImage());
 
             var newButton = (Button)FindViewById(Resource.Id.new_button);
 
@@ -87,7 +91,7 @@ namespace WildEMR
                 var newRecordScreen = new Intent(this, typeof(NewPatientScreen2));
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", current_patient.Identifier);
-                extras.PutInt("Patient_SPECIES", current_patient.Species);
+                extras.PutInt("Patient_SPECIES", current_patient.species_id);
                 extras.PutBoolean("newPatient", false);
                 newRecordScreen.PutExtras(extras);
                 StartActivity(newRecordScreen);
@@ -102,7 +106,7 @@ namespace WildEMR
                 var newRecordScreen = new Intent(this, typeof(RecordSelector));
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", current_patient.Identifier);
-                extras.PutInt("Patient_SPECIES", current_patient.Species);
+                extras.PutInt("Patient_SPECIES", current_patient.species_id);
                 newRecordScreen.PutExtras(extras);
                 StartActivity(newRecordScreen);
             };

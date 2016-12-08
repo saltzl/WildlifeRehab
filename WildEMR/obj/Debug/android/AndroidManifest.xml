@@ -3,8 +3,10 @@
   <!--suppress UsesMinSdkAttributes-->
   <uses-sdk android:minSdkVersion="16" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="WildEMR" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="PatientsScreen" android:name="md5d7f5275a3f6679d00875c7f5086b2161.PatientsScreen" />
+    <activity android:label="RecordSelector" android:name="md5d7f5275a3f6679d00875c7f5086b2161.RecordSelector" />
     <activity android:label="SpeciesScreen" android:name="md5d7f5275a3f6679d00875c7f5086b2161.SpeciesScreen" />
     <activity android:label="PatientProfileScreen" android:name="md5d7f5275a3f6679d00875c7f5086b2161.PatientProfileScreen" />
     <activity android:label="New Patient Screen" android:name="md5d7f5275a3f6679d00875c7f5086b2161.NewPatientScreen2" />

@@ -54,14 +54,21 @@ namespace WildEMR
             {
                 //Set user input to patient object
                 new_patient.Identifier = id_text.Text;
-                new_patient.Species = species_list.Where(species => species.Name == species_spinner.SelectedItem.ToString()).SingleOrDefault().ID;
+                new_patient.species_id = species_list.Where(species => species.Name == species_spinner.SelectedItem.ToString()).SingleOrDefault().ID;
 
                 //Pass information along to the next activity
                 var new_patient_screen2 = new Intent(this, typeof(NewPatientScreen2));
                 Bundle extras = new Bundle();
                 extras.PutString("Patient_ID", new_patient.Identifier);
-                extras.PutInt("Patient_SPECIES", new_patient.Species);
-                extras.PutString("Patient_Photo", App._file.Path);
+                extras.PutInt("Patient_SPECIES", new_patient.species_id);
+                if (App._file == null)
+                {
+                    extras.PutString("Patient_Photo", "");
+                }
+                else
+                {
+                    extras.PutString("Patient_Photo", App._file.Path);
+                }
                 new_patient_screen2.PutExtras(extras);
                 StartActivity(new_patient_screen2);
             };
@@ -77,7 +84,7 @@ namespace WildEMR
             if (PictureAppExists())
             {
                 CreatePictureDirectory();
-                Button button = FindViewById<Button>(Resource.Id.add_photo_button);
+                ImageButton button = FindViewById<ImageButton>(Resource.Id.add_photo_button);
                 button.Click += TakePicture;
 
             }

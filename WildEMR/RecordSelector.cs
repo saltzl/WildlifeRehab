@@ -22,15 +22,15 @@ namespace WildEMR
             var identifier = Intent.GetStringExtra("Patient_ID");
             var species = Intent.GetIntExtra("Patient_SPECIES", 0);
 
-            var patient = await DatabaseConnection.Instance.GetPatientAsync(species,identifier);
-            var recordsArray = patient.Records.Select(record => record.ID).ToList();
+            var records = await DatabaseConnection.Instance.GetRecordAsync(species,identifier);
+            var recordsArray = records.Select(record => record.ID).ToList();
             ArrayAdapter adapter = new ArrayAdapter(this, global::Android.Resource.Layout.SimpleListItem1, recordsArray);
             recordListView = FindViewById<ListView>(Resource.Id.recordsListView);
             recordListView.Adapter = adapter;
             recordListView.ItemClick += (sender, args) =>
             {
                 var lview = sender as ListView;
-                var clicked = patient.Records[args.Position];
+                var clicked = records[args.Position];
                 //Pass the new patient information to the Patient Profile Screen
                 var existing_info_screen = new Intent(this, typeof(PatientProfileScreen));
                 Bundle extras = new Bundle();

@@ -36,7 +36,7 @@ namespace WildEMR
                 Bundle extras = new Bundle();
                 extras.PutBoolean("NEW_PATIENT", false);
                 extras.PutString("Patient_ID", clicked.Identifier);
-                extras.PutInt("Patient_SPECIES", clicked.Species);
+                extras.PutInt("Patient_SPECIES", clicked.species_id);
 
                 existing_info_screen.PutExtras(extras);
                 StartActivity(existing_info_screen);

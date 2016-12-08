@@ -18,7 +18,8 @@ namespace WildEMR
     public class Patient
     {
         public string Identifier { get; set; }
-        public int Species { get; set; }
+        public int species_id { get; set; }
+        public Species Species { get; set; }
         public List<Record> Records { get; set; }
         public byte[] Image { get; set;  }
 
@@ -45,11 +46,14 @@ namespace WildEMR
 
         public Bitmap GetImage()
         {
-            using (var ms = new MemoryStream(Image))
-            {
-                BitmapFactory.Options options = new BitmapFactory.Options();
-                return BitmapFactory.DecodeByteArray(ms.ToArray(), 0, (int)ms.Length, options);
-            }
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            
+                using (var ms = new MemoryStream(Image))
+                {
+                    return BitmapFactory.DecodeByteArray(ms.ToArray(), 0, (int)ms.Length, options);
+                }
+            
+            
         }
     }
 }
